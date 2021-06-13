@@ -41,18 +41,15 @@ void MainWindow::on_pushButton_3_clicked()
     }
 }
 
-
 void MainWindow::on_pushButton_2_clicked()
 {
     emit openTxt();
 }
 
-
 void MainWindow::on_pushButton_clicked()
 {
     emit saveTxt();
 }
-
 
 void MainWindow::open()
 {
@@ -88,13 +85,24 @@ void MainWindow::quitProgram()
     qApp->quit();
 }
 
+
+
 void MainWindow::keyPressEvent(QKeyEvent *event) {
 
     if((event->key() == Qt::Key_O)&&(event->modifiers() == Qt::CTRL)) open();
-    else if ((event->key() == Qt::Key_S)&&(event->modifiers() == Qt::CTRL)) saveAs();
+    else if ((event->key() == Qt::Key_S)&&(event->modifiers() == Qt::CTRL)) emit saveTxt();
     else if ((event->key() == Qt::Key_Q)&&(event->modifiers() == Qt::CTRL)) this->close();
     else if ((event->key() == Qt::Key_N)&&(event->modifiers() == Qt::CTRL)) {ui->plainTextEdit->clear(); open();}
 }
+
+void MainWindow::changeEvent(QEvent *event)
+{
+    if (event->type() == QEvent::LanguageChange) {
+        ui->retranslateUi(this);
+    }
+}
+
+
 
 /*QString MainWindow::getHtml(const QString &url){
     QNetworkAccessManager manager;
@@ -112,7 +120,14 @@ void MainWindow::switchLang(int x) {
 
     switch (x) {
 
-    case 0: break;
+    case 0: {
+        if(translator.load(":/tr/QtLanguage_ru.qm")) {
+        qApp->installTranslator(&translator);
+        }
+        else qDebug() << "no success";
+        break;
+        break;
+    }
     case 1: {
         if(translator.load(":/tr/QtLanguage_eng.qm")) {
         qApp->installTranslator(&translator);
@@ -152,12 +167,10 @@ void MainWindow::on_checkBox_stateChanged(int arg1)
     }
 }
 
-
 void MainWindow::on_pushButton_4_clicked()
 {
     emit chooseLang(0);
 }
-
 
 void MainWindow::on_pushButton_5_clicked()
 {

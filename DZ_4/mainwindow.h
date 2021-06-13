@@ -13,8 +13,6 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-    QTranslator translator;
-
 signals:
 
     void chooseLang(int);
@@ -32,6 +30,8 @@ public:
 protected:
 
     void keyPressEvent(QKeyEvent *) override;
+
+    void changeEvent(QEvent * event) override;
 
 private slots:
     void on_pushButton_3_clicked();
@@ -62,6 +62,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
     QStringList getData(const QString& html);
+
+    QTranslator translator;
+
 };
 #endif // MAINWINDOW_H

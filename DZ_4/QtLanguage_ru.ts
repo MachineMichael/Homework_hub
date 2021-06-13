@@ -44,7 +44,32 @@
         <translation>English</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="44"/>
+        <location filename="mainwindow.ui" line="151"/>
+        <source>Горячие клавиши:</source>
+        <translation>Горячие клавиши:</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="164"/>
+        <source>Ctrl+O - открыть</source>
+        <translation>Ctrl+O - открыть</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="177"/>
+        <source>Ctrl+S - сохранить</source>
+        <translation>Ctrl+S - сохранить</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="190"/>
+        <source>Ctrl+N - новый</source>
+        <translation>Ctrl+N - новый</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="203"/>
+        <source>Ctrl+Q - выход из программы</source>
+        <translation>Ctrl+Q - выход из программы</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="40"/>
         <source>О программе</source>
         <translation>О программе</translation>
     </message>

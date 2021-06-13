@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en" sourcelanguage="ru">
+<TS version="2.1" language="en_US" sourcelanguage="ru_RU">
 <context>
     <name>MainWindow</name>
     <message>
@@ -36,17 +36,42 @@
     <message>
         <location filename="mainwindow.ui" line="112"/>
         <source>Русский</source>
-        <translation type="unfinished"></translation>
+        <translation>Русский</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="125"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation>English</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="44"/>
+        <location filename="mainwindow.ui" line="151"/>
+        <source>Горячие клавиши:</source>
+        <translation>Hotkeys:</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="164"/>
+        <source>Ctrl+O - открыть</source>
+        <translation>Ctrl+O - open</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="177"/>
+        <source>Ctrl+S - сохранить</source>
+        <translation>Ctrl+S - save</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="190"/>
+        <source>Ctrl+N - новый</source>
+        <translation>Ctrl+N - new</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="203"/>
+        <source>Ctrl+Q - выход из программы</source>
+        <translation>Ctrl+Q - quit program</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="40"/>
         <source>О программе</source>
-        <translation type="unfinished">About</translation>
+        <translation>About</translation>
     </message>
 </context>
 </TS>
