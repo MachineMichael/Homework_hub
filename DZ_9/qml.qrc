@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MyButton.qml</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>but_pressed.jpg</file>
+        <file>but_ready.jpg</file>
+    </qresource>
+    <qresource prefix="/tasks">
+        <file>TaskList.txt</file>
+    </qresource>
+</RCC>
